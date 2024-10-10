@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0" version="24.7.17">
+  <diagram name="Página-1" id="d3_ooVtAvkvWBUjS6AKj">
+    <mxGraphModel dx="1823" dy="1738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2" target="3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="create_monthly_table&#xa;(PythonOperator - MsSqlHook)" style="whiteSpace=wrap;strokeWidth=2;fontStyle=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-200" y="40" width="173" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="3" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="run_initial_step&#xa;(PythonOperator - MsSqlHook)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry y="40" width="170" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="4" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-26" value="&amp;gt; 97 %" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="slY7bCqXh4HRv2QV8Jph-24" vertex="1" connectable="0">
+          <mxGeometry x="-0.02" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-29" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4" target="slY7bCqXh4HRv2QV8Jph-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-30" value="&amp;lt;=97%" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="slY7bCqXh4HRv2QV8Jph-29" vertex="1" connectable="0">
+          <mxGeometry x="-0.0704" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4" value="check_precision&#xa;(BranchPythonOperator)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="200" y="40" width="150" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5" target="slY7bCqXh4HRv2QV8Jph-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="run_all_steps&#xa;(PythonOperator - MsSqlHook)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="400" y="-8" width="175" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="slY7bCqXh4HRv2QV8Jph-15" target="2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-240" y="64" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-15" value="unknown_trigger&#xa;(sensor)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="-290" y="-80" width="110" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="slY7bCqXh4HRv2QV8Jph-28" target="slY7bCqXh4HRv2QV8Jph-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-41" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="slY7bCqXh4HRv2QV8Jph-28" target="slY7bCqXh4HRv2QV8Jph-35" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-28" value="review_cause&#xa;(PythonOperator - MsSqlHook)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="190" y="140" width="170" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-31" value="send_success_email&#xa;(EmailOperator)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="417.5" y="80" width="140" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-33" value="send_failed_email&#xa;(EmailOperator)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="207.5" y="246" width="135" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="slY7bCqXh4HRv2QV8Jph-35" target="slY7bCqXh4HRv2QV8Jph-42" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-35" value="request_reload&#xa;(EmailOperator)" style="whiteSpace=wrap;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="20" y="240" width="140" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="slY7bCqXh4HRv2QV8Jph-42" target="2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="slY7bCqXh4HRv2QV8Jph-42" value="&lt;div&gt;verify_corrected_daily_load&lt;/div&gt;(PythonOperator -&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;ImapHook)&lt;/span&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-198.5" y="234" width="170" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
